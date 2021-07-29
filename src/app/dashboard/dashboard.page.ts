@@ -1,4 +1,4 @@
-// dashboard.page.ts
+
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from '../services/firebase.service';
 import { NavController, ActionSheetController } from '@ionic/angular';
@@ -8,7 +8,6 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 import firebase from 'firebase';
 import * as CryptoJS from 'crypto-js';
 
-// @ts-ignore
 @Component( {
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
