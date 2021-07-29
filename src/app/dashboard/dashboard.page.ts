@@ -142,13 +142,13 @@ export class DashboardPage implements OnInit {
     await actionSheet.present();
   }
 
-  // Encriptar
+  
   encryptText( text ) {
     this.encryptedText = CryptoJS.AES.encrypt( text, '#theKey#', '#theKey#' ).toString();
     console.log( 'texto encriptado', this.encryptedText );
   }
 
-  // Desencriptar
+ 
   decryptText( text ) {
     this.decryptedText = CryptoJS.AES.decrypt( text, '#theKey#', '#theKey#' )
       .toString( CryptoJS.enc.Utf8 );
